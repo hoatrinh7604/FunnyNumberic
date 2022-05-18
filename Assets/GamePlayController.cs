@@ -133,6 +133,12 @@ public class GamePlayController : MonoBehaviour
     public void UpdateScore()
     {
         score++;
+        if(highscore < score)
+        {
+            highscore = score;
+            PlayerPrefs.SetInt("score", highscore);
+            uiController.UpdateHighScore(highscore);
+        }
         uiController.UpdateScore(score);
     }
 
@@ -195,6 +201,7 @@ public class GamePlayController : MonoBehaviour
         SetSlider();
         score = 0;
         uiController.UpdateScore(score);
+        uiController.UpdateHighScore(PlayerPrefs.GetInt("score"));
 
         StartCoroutine(StartAfterTime());
     }
