@@ -126,6 +126,7 @@ public class GamePlayController : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0;
+        SoundController.Instance.PlayAudio(SoundController.Instance.gameOver, 0.8f, false);
         uiController.GameOver();
         Reset();
     }
@@ -164,33 +165,13 @@ public class GamePlayController : MonoBehaviour
         else theNumberOfNumber = 1;
     }
 
+    private string[] listNumbers = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+                                    "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"};
     public string IntToText(int value)
     {
-        switch(value)
-        {
-            case 0: return "Zero"; break;
-            case 1: return "One"; break;
-            case 2: return "Two"; break;
-            case 3: return "Three"; break;
-            case 4: return "Four"; break;
-            case 5: return "Five"; break;
-            case 6: return "Six"; break;
-            case 7: return "Seven"; break;
-            case 8: return "Eight"; break;
-            case 9: return "Nine"; break;
-            case 10: return "Ten"; break;
-            case 11: return "Eleven"; break;
-            case 12: return "Twelve"; break;
-            case 13: return "Thirteen"; break;
-            case 14: return "Fourteen"; break;
-            case 15: return "Fifteen"; break;
-            case 16: return "Sixteen"; break;
-            case 17: return "Seventeen"; break;
-            case 18: return "Eighteen"; break;
-            case 19: return "Nineteen"; break;
-            case 20: return "Twenty"; break;
-            default: return "Zero"; break;
-        }
+        if (value < 0 || value > listNumbers.Length) return listNumbers[0];
+
+        return listNumbers[value];
     }
 
     public void Reset()

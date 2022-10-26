@@ -87,7 +87,7 @@ TextureImporter:
       213: 8317471482606852885
     second: pngwing.com (80)_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,6 +147,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -185,6 +187,42 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -754,6 +792,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pngwing.com (80)_28: 6984183045136277949
+      pngwing.com (80)_8: -6215715603907809975
+      pngwing.com (80)_15: -6009617280915346697
+      pngwing.com (80)_16: 5860895839129155176
+      pngwing.com (80)_18: 7204391096623646673
+      pngwing.com (80)_4: 8307573318912305083
+      pngwing.com (80)_14: -1814533759094570896
+      pngwing.com (80)_20: -6054256297134394591
+      pngwing.com (80)_25: -6321714492926739256
+      pngwing.com (80)_31: 8317471482606852885
+      pngwing.com (80)_0: 5423997888482007688
+      pngwing.com (80)_17: -608690968135351129
+      pngwing.com (80)_11: 8794679173951047566
+      pngwing.com (80)_10: 3101847919035743094
+      pngwing.com (80)_27: 6863015938598834166
+      pngwing.com (80)_9: -3074948893004427074
+      pngwing.com (80)_2: -3309777782874272863
+      pngwing.com (80)_19: -898044805868815999
+      pngwing.com (80)_23: -6777133111742477594
+      pngwing.com (80)_6: 1036330243026214761
+      pngwing.com (80)_21: -4362295492351100723
+      pngwing.com (80)_22: -5984910813451479305
+      pngwing.com (80)_12: 8562447324670068826
+      pngwing.com (80)_26: 4762879990766143709
+      pngwing.com (80)_3: -2041566732930492441
+      pngwing.com (80)_7: 7800264878563426829
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
